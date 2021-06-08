@@ -1,0 +1,185 @@
+footer{
+background-color: rgba(0,147,221,1) ;
+display: flex;
+justify-content: space-between;
+box-shadow: 0 -10px 20px -5px rgba(115,115,115,0.75);
+color: white;
+}
+
+
+/* @media only screen and (max-width:500px) {
+
+  .footerSection{
+    width: 100%;
+flex-wrap: wrap;
+  }
+  
+} */
+
+footer img{
+width: 80px;
+height: 80px;
+box-shadow: rgb(75, 75, 75) 3px 2px 2px;
+border-radius: 5px;
+margin-right: 20px;
+}
+
+footer div {
+display: flex;
+flex-direction: column;
+margin: 10px;
+text-align: center;
+}
+
+footer h2{
+text-align: left;
+}
+
+.underline{
+border-bottom: #ffffff solid 2px;
+width: 60px;
+margin-bottom: 15px;
+}
+
+.logoText{
+display: flex;
+align-items: center;
+flex-direction: row;
+}
+
+
+/* Социални бутони */
+
+h1,
+h2,
+h3,
+ */
+._12 {
+    font-size: 1.2em;
+}
+
+._14 {
+font-size: 20px;
+text-align: left;
+margin-top: 10px;
+}
+
+ul {
+padding:0;
+list-style: none;
+}
+
+.footer-social-icons {
+width: 350px;
+display:block;
+margin: 0 auto;
+}
+
+.social-icon {
+color: #fff;
+}
+
+ul.social-icons {
+margin-top: 10px;
+}
+
+.social-icons li {
+vertical-align: top;
+display: inline;
+height: 100px;
+}
+
+.social-icons a {
+color:rgba(0,147,221,1) ;
+text-decoration: none;
+}
+
+.fa-facebook {
+padding:10px 14px;
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition: .5s;
+background-color: #ffffff;
+}
+
+.fa-facebook:hover {
+background-color: #3d5b99;
+}
+
+.fa-twitter {
+padding:10px 12px;
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition: .5s;
+background-color: #ffffff;
+}
+
+.fa-twitter:hover {
+background-color: #00aced;
+}
+
+.fa-rss {
+padding:10px 14px;
+-o-transition:.5s;
+-ms-transition:.5s;
+-moz-transition:.5s;
+-webkit-transition:.5s;
+transition: .5s;
+background-color: #ffffff;
+}
+
+.fa-rss:hover {
+background-color: #eb8231;
+}
+
+/* край социални бутони */
+
+.newsFooter {
+display: flex;
+flex-direction: row;
+}
+
+.newsFooter img{
+width: 70px;
+height: 60px;
+}
+
+.newsFooter div{
+text-align: left;
+}
+
+.newsFooter a{
+text-decoration: none;
+text-transform: uppercase;
+color:white;
+font-weight: bold;
+}
+
+.newsFooter p{
+margin-top: 10px;
+}
+
+.usefullLinks li{
+margin:  15px 0 15px 0;
+text-align: left;
+padding-bottom: 10px;
+border-bottom: 1px solid white;
+}
+
+.usefullLinks a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.forGkSpartak {
+display: flex;
+padding-bottom: 10px;
+border-bottom: 1px solid white;
+flex-direction: row;
+justify-content: space-between;
+text-align: left  ;
+}
