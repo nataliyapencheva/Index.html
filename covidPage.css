@@ -1,0 +1,98 @@
+*{box-sizing: border-box;}
+body {
+box-sizing: border-box; 
+font-family: 'Oswald', sans-serif;
+margin: 0;
+}
+
+.header{
+background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,147,221,1) 50%, rgba(160,204,237,1) 100%);
+}
+
+.header h1{
+flex: 1;
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 40px;
+}
+
+header div {
+display: flex;
+align-items: center;
+}
+
+.corona {
+text-align: center;
+margin-bottom: 50px;
+border-bottom: solid 1px rgb(199, 199, 199);
+}  
+
+header img {
+border-radius: 15px;
+width: 100px;
+margin: 20px;
+box-shadow: rgb(75, 75, 75) 3px 2px 2px;
+}
+
+main {
+margin: 20px 150px 20px 150px;
+font-size: 20px;
+text-indent: 20px;
+line-height: 1.6;
+}
+
+.date {
+display: flex;
+font-style: italic;
+font-size: 20px;
+}
+
+h2 {
+color:  rgba(0,147,221,1);
+}
+
+#calendar a{
+color:  rgba(0,147,221,1);
+text-decoration: none;
+}
+
+.links li{
+list-style-type: disc;
+margin-left: 30px;
+}
+
+.links a{ 
+text-decoration: none;
+color: black;
+font-weight: bolder;
+}
+
+.questions li{
+font-weight: bold;
+}
+
+footer{
+margin-top: 30px;
+text-indent: 0px;
+line-height: auto;
+}
+
+footer h2{
+margin: 0px;
+color: white ;
+}
+
+footer p{
+margin: 0px;
+}
+
+footer h6{
+margin: 0px;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+}
+
