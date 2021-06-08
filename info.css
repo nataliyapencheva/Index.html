@@ -1,0 +1,189 @@
+*{box-sizing: border-box;}
+
+body {
+box-sizing: border-box; 
+font-family: 'Oswald', sans-serif;
+margin: 0;
+}
+
+.header{
+background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,147,221,1) 50%, rgba(160,204,237,1) 100%);
+}
+
+.header h1{
+flex: 1;
+text-align: center;
+color: rgb(255, 255, 255);
+font-size: 40px;
+}
+
+header div {
+display: flex;
+align-items: center;
+}
+
+.corona {
+text-align: center;
+margin-bottom: 50px;
+border-bottom: solid 1px rgb(199, 199, 199);
+}  
+
+header img {
+border-radius: 15px;
+width: 100px;
+margin: 20px;
+box-shadow: rgb(75, 75, 75) 3px 2px 2px;
+}
+
+main {
+line-height: 1.6;
+text-indent: 30px;
+}
+
+img {
+width: 700px;  
+margin-top: 20px;
+}
+
+.date{
+font-size: 20px;
+padding: 0 20px 0 20px;
+background-color: rgba(0,147,221,0.5) ;
+}
+
+.images{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+.beggining {
+display: flex;
+margin-top: 50px;
+text-align: center;
+}
+
+/* върни се в началото */
+.icon-btn {
+width: 50px;
+height: 50px;
+border: 1px solid #cdcdcd;
+background: white;
+border-radius: 25px;
+overflow: hidden;
+position: relative;
+transition: width 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+width: 120px;
+}
+
+.add-btn::before,
+.add-btn::after {
+transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+content: "";
+position: absolute;
+height: 4px;
+width: 10px;
+top: calc(50% - 2px);
+background: rgb(4, 0, 255);
+}
+
+.add-btn::after {
+right: 14px;
+overflow: hidden;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+}
+
+.add-btn::before {
+left: 14px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+
+.icon-btn:focus {
+outline: none;
+}
+
+.btn-txt {
+opacity: 0;
+transition: opacity 0.2s;
+align-items: center;
+text-decoration: none;
+color: rgb(0, 4, 255);
+}
+
+.add-btn:hover::before,
+.add-btn:hover::after {
+width: 4px;
+border-radius: 2px;
+}
+
+.add-btn:hover .btn-txt {
+opacity: 1;
+}
+
+.add-icon::after,
+.add-icon::before {
+transition: all 0.2s ease-in-out;
+content: "";
+position: absolute;
+height: 20px;
+width: 2px;
+top: calc(50% - 10px);
+background: rgb(0, 4, 255);
+overflow: hidden;
+}
+
+.add-icon::before {
+left: 22px;
+border-top-left-radius: 2px;
+border-bottom-left-radius: 2px;
+}
+
+.add-icon::after {
+right: 22px;
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+}
+
+.add-btn:hover .add-icon::before {
+left: 15px;
+height: 4px;
+top: calc(50% - 2px);
+}
+
+.add-btn:hover .add-icon::after {
+right: 15px;
+height: 4px;
+top: calc(50% - 2px);
+}
+/* върни се в началото */
+
+footer{
+margin-top: 30px;
+text-indent: 0px;
+line-height: auto;
+}
+
+footer h2{
+margin: 0px;
+}
+
+footer p{
+margin: 0px;
+}
+
+footer h6{
+margin: 0px;
+}
+
+footer a {
+text-decoration: none;
+color: white;
+}
