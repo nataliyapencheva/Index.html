@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/splide-2.4.21/css/splide.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/splide-2.4.21/css/themes/splide-default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+
+    <script src="https://kit.fontawesome.com/69ed70d2de.js" crossorigin="anonymous"></script>
+    <title>Artistic Gymnastic Spartac Plovdiv</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+        @import url(https://fonts.googleapis.com/css?family=Lato);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    </style>
+    <header>
+        <p id="beggining"></p>
+        <div class="header" id="myHeader">
+            <img src="images/logo.png" alt="logo" title="logo">
+            <h1>Клуб по спортна гимнастика "Спартак" гр.Пловдив</h1>
+            <div>
+                <a href="#">EN</a>
+                <a href="#">BG</a>
+            </div>
+        </div>
+
+        <nav>
+            <div>
+                <a href="#news">Новини</a>
+
+                <div class="dropdown">
+                    <a href="#calendar" class="dropbtn">Календар</a>
+                    <div class="dropdown-content">
+                        <a href="#calendar">Календар на тренировките</a>
+                        <a href="#comp">Календар на състезанията</a>
+                    </div>
+                </div>
+
+                <a href="#forUs">За нас</a>
+                <a href="#gallery">Галерия</a>
+
+                <div class="dropdown">
+                    <a href="#contacts" class="dropbtn">Контакти</a>
+                    <div class="dropdown-content">
+                        <a href="#whereToFind">Как да ни намерите</a>
+                        <a href="#ourTrainers">Нашите треньори</a>
+                    </div>
+                </div>
+
+                <a href="#products">Продукти</a>
+                <a href="#prices">Цени</a>
+
+                <div class="search-container" id="search-container">
+                    <form>
+                        <input required class="searchSee" type="text" placeholder="Търси..." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <button onclick="openSearch(this)" class="search"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="covid">
+                <a href="covidInfo.html" target="_blank" rel="covid19">Мерки свързани с разпространението на
+                    CoVid-19</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="scroll-container">
+
+        <section class="news" data-index="1">
+            <h1 id="news">
+                Новини
+            </h1>
+
+            <div class="newsAll">
+                <div class="signLogo">
+                    <img src="./images/logo.png" alt="logo" title="logo">
+
+                    <div class="sign">
+                        <h2>Запишете се за да получавате актуални новини от нас</h2>
+                        <p>Ако искате първи да научавате за новините от Нас - използвайте фрмата по-долу и се запишете
+                            за
+                            нашият
+                            бюлетин!</p>
+                        <div>
+                            <div>
+                                <p>
+                                    Имейл
+                                </p>
+                                <input type="email" required>
+                            </div>
+                            <div>
+                                <p>
+                                    Име
+                                </p>
+                                <input type="text" required>
+                            </div>
+                            <button class="signIn">
+                                Запиши се!
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="updatedNews">
+                    <p id="update"> </p>
+                    <h2>С радост искаме да Ви съобщим, че залата вече е отворена за посещения!</h2>
+                    <p>Започваме тренировъчният процес
+                        <a href="info.html" rel="info">...<i class="far fa-arrow-alt-circle-right"></i></a>
+                    </p>
+                    <p>21/11/2020г</p>
+                    <h2>Завърши турнирът "Седемте тепета"!</h2>
+                    <p>Успешното представяне на нашите състезатели на турнира "Седемте
+                        тепета"
+                        <a href="info.html" rel="info">...<i class="far fa-arrow-alt-circle-right"></i></a>
+                    </p>
+                    <p>24/08/2020г</p>
+                    <h2>Държавно отборно състезание гр.София</h2>
+                    <p>С радост искаме да Ви съобщим за успешното представяне на нашите състезатели на държавното
+                        отборно състезание
+                        <a href="info.html" rel="info">...<i class="far fa-arrow-alt-circle-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+        <section id="calendar" data-index="2">
+            <h1>
+                Календар
+            </h1>
+
+            <div>
+                <div>
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=er9ip1kmvvijfpd4k8lj64bipc%40group.calendar.google.com&ctz=Europe%2FSofia"
+                        style="border: 1px" width="600" height="500" frameborder="1px" scrolling="no"></iframe>
+
+                </div>
+
+                <div>
+                    <p id="comp">
+                        Календар на състезанията за 2021г.
+                    </p>
+                    <img src="./images/calendar.jpg" alt="calendar" title="calendar">
+                </div>
+            </div>
+
+        </section>
+
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+        <section id="forUs" data-index="3">
+            <h1>
+                За нас
+            </h1>
+
+            <div>
+                <div class="forUs ">
+                    <img src="./images/icon.png" alt="icon" title="icon">
+
+                    <div>
+                        <p>Добре дошли в клуба по гимнастика на Спартак – място, което предлага на Вас и децата
+                            Ви забавление сред техни връсници. В клуба ще имате възможността да оставите детето си в
+                            ръцете
+                            на
+                            най-квалифицираните треньори в страната. В гимнастическия клуб се приемат за записване
+                            деца
+                            от 3
+                            годишна възраст.
+                            Заниманията се провеждат в група като главно имат за цел да обогатят двигателната
+                            култура на
+                            вашите
+                            деца като развият
+                            едни от основните и най-важни физически качества:</p>
+                        <ul>
+                            <li>гъвкавост (най-подходящия период за развитие на това качество е този - в ранните
+                                детски
+                                години)
+                            </li>
+                            <li>координация</li>
+                            <li>сила </li>
+                            <li>воля за справяне с дадените задачи</li>
+                        </ul>
+                        <p>С изграждането на здраво, красиво, гъвкаво и силно тяло, подкрепено с голяма воля за
+                            успех и
+                            ред
+                            други положителни характеристики, гимнастиката може да се нарече универсален спорт,
+                            защото
+                            би
+                            дал
+                            един прекрасен старт
+                            на вашето дете във всяка насока. Що се отнася до подходящата възраст за започване на
+                            заниманията,
+                            съветваме това да се случи възможно най-рано - още след третата година децата най-бързо
+                            развиват
+                            физически качества и се
+                            учат на дисциплина и самоконтрол. Освен това, практикувайки гимнастика, децата развиват
+                            и
+                            повишават
+                            чувството си за ориентация,
+                            изграждат умения за комуникация и възприемане на околната среда, изпитват
+                            удовлетвореност от
+                            собствените си способности.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+        <section id="gallery" data-index="4">
+            <h1>
+                Галерия
+            </h1>
+            <div>
+                <div class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide slide_1" style="width: 150px"></li>
+                            <li class="splide__slide slide_2" style="width: 150px"></li>
+                            <li class="splide__slide slide_3" style="width: 150px"></li>
+                            <li class="splide__slide slide_4" style="width: 150px"></li>
+                            <li class="splide__slide slide_5" style="width: 150px"></li>
+                            <li class="splide__slide slide_6" style="width: 150px"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <div>
+                    <video width="400" controls>
+                        <source src="./images/DSC_2592.mp4" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JKu6-CLgIk0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="" style="text-align: center;margin:5%">
+                <button class="icon-btn add-btn">
+                    <div class="add-icon"></div>
+                    <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+                </button>
+            </div>
+        </section>
+
+        <section id="contacts" data-index="5">
+            <h1>
+                Контакти
+            </h1>
+            <div>
+
+                <div id="whereToFind">
+                    <h2>Как да ни намерите</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.4012398643653!2d24.718862147299347!3d42.14702044628286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3fad4a2f8951d4a2!2z0KHQv9C-0YDRgtC90LAg0LfQsNC70LAg0L_QviDQs9C40LzQvdCw0YHRgtC40LrQsA!5e0!3m2!1sbg!2sbg!4v1610447375739!5m2!1sbg!2sbg"
+                        width="450" height="490" frameborder="0" style="border:0; " allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+
+                    <div class="clubContacts">
+                        <p>Или се свържете с нас директно на:</p>
+                        <div>
+                            <i class="fas fa-envelope-open-text"></i>
+                            <a href="email:spartakplovdivgym@gmail.com">spartakplovdivgym@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-square"></i>
+                            <a href="tel:032 12 62 58">032 12 62 58</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="followUs">Последвайте ни и в социалните мрежи:</p>
+
+                        <div class="footer-social-icons">
+
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/groups/367474546711176" class="social-icon"> <i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/?lang=bg" class="social-icon"> <i
+                                            class="fa fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://www.facebook.com/GKSpartakPlovdiv/about/?ref=page_internal"
+                                        class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="ourTrainers">
+                    <h2>Нашите треньори</h2>
+                    <div class="trainers">
+                        <div class="trainersInfo">
+                            <img src="./images/maria.jpg" alt="maria" title="maria">
+                            <h4>Мария Карталова-Стоилова</h4>
+                            <p>Завършила НСА и педагогика, Олимпйска състезателка от близкото минало</p>
+                            <div>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <a href="email:mariakartalova@gmail.com">mariakartalova@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone-square"></i>
+                                <a href="tel:0886 12 62 58">0886 12 62 58</a>
+                            </div>
+                        </div>
+
+                        <div class="trainersInfo">
+                            <img src="./images/man1.jpg" alt="rado" title="rado">
+                            <h4>Радослв Тодоров</h4>
+                            <p>Завършил НСА и педагогика, Олимпйски състезател от близкото минало</p>
+                            <div>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <a href="email:radoslavtodorov@gmail.com">radoslavtodorov@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone-square"></i>
+                                <a href="tel:0885 21 54 78">0885 21 54 78</a>
+                            </div>
+                        </div>
+
+                        <div class="trainersInfo">
+                            <img src="./images/man2.jpg" alt="wasko" title="wasko">
+                            <h4>Васил Димитров</h4>
+                            <p>Завършил педагогика, успял спортист с много награди от международни състезания
+                            </p>
+                            <div>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <a href="email:vasildimitrov@gmail.com">vasildimitrov@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone-square"></i>
+                                <a href="tel:0888 56 59 87">0888 56 59 87</a>
+                            </div>
+                        </div>
+
+                        <div class="trainersInfo">
+                            <img src="./images/woman2.jpg" alt="vesi" title="vesi">
+                            <h4>Весела Сарксълъкова</h4>
+                            <p>Завършила педагогика, успяла спортистка с много награди от международни състезания
+                            </p>
+                            <div>
+                                <i class="fas fa-envelope-open-text"></i>
+                                <a href="email:veselasarksalakova@gmail.com">veselasarksalakova@gmail.com</a>
+                            </div>
+                            <div>
+                                <i class="fas fa-phone-square"></i>
+                                <a href="tel:0888 25 65 32">0888 25 65 32</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+        <section id="products" data-index="6">
+            <h1>
+                Продукти
+            </h1>
+            <div class="typeProducts">
+                <div class="conProducts">
+                    <img src="./images/shop1.png" alt="shop1" title="shop1">
+                    <h4>СПОРТЕН ЕКИП СПАРТАК</h4>
+                    <div>
+                        <p>
+                            Може да бъде изработен във всички размери!
+                        </p>
+                        <p>
+                            Предназначение: за тренировки и състезания по спортна гимнастика. Дишащо материя – запазва
+                            тялото
+                            сухо по време на
+                            спортни занимания. Удобно и лесно за поддръжка, осигуряващо свобода на движение по време на
+                            тренировка.
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена:</p>
+                        <p>60 лева</p>
+                    </div>
+                </div>
+
+                <div class="conProducts">
+                    <img src="./images/shop2.png" alt="shop2" title="shop2">
+                    <h4>РАНИЦА СПАРТАК</h4>
+                    <div>
+                        <p>
+                            Предназначение: ежедневна детска раница, подходяща за спорт.
+                        </p>
+                        <p>
+                            Детска раница, идеална за спортния екип. Материал - полиестер. Размери: 330х417 мм
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена: </p>
+                        <p>5,99 лева</p>
+                    </div>
+                </div>
+
+                <div class="conProducts">
+                    <img src="./images/shop3.png" alt="shop3" title="shop3">
+                    <h4>СЪСТЕЗАТЕЛНО ТРИКО</h4>
+                    <div>
+                        <p>
+                            Предназначение: за тренировки и състезания по спортна гимнастика.
+                        </p>
+                        <p>
+                            Дишащо трико – запазва тялото сухо по време на спортни занимания. Удобно и лесно за
+                            поддръжка трико, осигуряващо свобода
+                            на движение по време на тренировка. Milano е световен лидер в производството на
+                            висококачествена екипировка за
+                            гимнастика.Пълната гама на трика за гиманстика може да разгледате на:
+                            www.milano-pro-sport.com
+
+                            Клуб Спартак е официален представител на марката за България
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена: </p>
+                        <p>50 лева</p>
+                    </div>
+                </div>
+
+                <div class="conProducts">
+                    <img src="./images/shop4.png" alt="shop4" title="shop4">
+                    <h4>ТРЕНИРОВЪЧЕН ЕКИП ЗА ГИМНАСТИКА</h4>
+                    <div>
+                        <p>
+                            Може да бъде изработен във всички рамери.
+                        </p>
+                        <p>
+                            Предназначение: за тренировки по спортна гимнастика. Дишащо трико – запазва тялото сухо по
+                            време на спортни занимания.
+                            Удобно и лесно за поддръжка трико, осигуряващо свобода на движение по време на тренировка.
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена: </p>
+                        <p>35 лева</p>
+                    </div>
+                </div>
+
+                <div class="conProducts">
+                    <img src="./images/shop5.png" alt="shop5" title="shop5">
+                    <h4>ЧАША СПАРТАК</h4>
+                    <div>
+                        <p>
+                            Материал - керамика.
+                        </p>
+                        <p>
+                            Вместимостта и е 200мл.
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена: </p>
+                        <p>5,99 лева</p>
+                    </div>
+                </div>
+
+                <div class="conProducts">
+                    <img src="./images/shop6.png" alt="shop6" title="shop6">
+                    <h4>СПОРТЕН ЕКИП ЗА МОМЧЕТА</h4>
+                    <div>
+                        <p>
+                            Може да бъде изработен във всички рамери.
+                        </p>
+                        <p>
+                            Дишащо трико – запазва тялото сухо по време на спортни занимания. Удобно и лесно за
+                            поддръжка трико, осигуряващо свобода
+                            на движение по време на тренировка. Milano е световен лидер в производството на
+                            висококачествена екипировка за
+                            гимнастика.Пълната гама на трика за гиманстика може да разгледате на:
+                            www.milano-pro-sport.com
+
+                            Клуб Спартак е официален представител на марката за България
+                        </p>
+                    </div>
+                    <div class="price">
+                        <p>Цена: </p>
+                        <p>5,99 лева</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="howToBuy">
+            <p class="buyContacts">Продуктите ни могат да бъдат закупени на место в залата, също така можете да ни
+                изпратите имейл
+                <a href="email:spartakplovdivgym@gmail.com"><img src="./images/mail.png" alt="mail" title="mail"></a>
+                с желаният вид, размер и цвят и ние ще Ви ги изпратим. За възникнали въпроси не се колебайте да се
+                свържите с нас
+                <a href="tel:032 12 62 58"><img src="./images/phone.png" alt="phone" title="phone"> </a>
+            </p>
+        </div>
+
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+        <section id="prices" data-index="7">
+            <h1>
+                Цени
+            </h1>
+            <table cellspacing="20" cellpadding="10">
+                <calgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </calgroup>
+                <thead>
+                    <tr>
+                        <th>&#35;</th>
+                        <th>Вид посещение</th>
+                        <th> Цена</th>
+                        <th>Забележка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="first_col">1</td>
+                        <td>Еднократно посещение</td>
+                        <td>5 лева</td>
+                        <td>Моля имайте предвид, че за всички посетители е предвидена такса 'Обслужване на залата'. Тя
+                            включва
+                            поддръжка на общите части, издаване на чип за вход.</td>
+                    </tr>
+                    <tr>
+                        <td class="first_col">2</td>
+                        <td>Месечен абонамент при посещение 2 дни в седмицата</td>
+                        <td>50 лева</td>
+                        <td>Посещенията се избират според графика на залата, треньорите и възрастовата група</td>
+                    </tr>
+                    <tr>
+                        <td class="first_col">3</td>
+                        <td>Месечен абонамент при посещение 4 дни в седмицата</td>
+                        <td>70 лева</td>
+                        <td>Посещенията се избират според графика на залата, треньорите и възрастовата група</td>
+                    </tr>
+                    <tr>
+                        <td class="first_col">4</td>
+                        <td>Еднократно посещение без треньор</td>
+                        <td>8 лева</td>
+                        <td>Моля имайте в предвид, че посещението на залата без треньор е на ВАША отговорност и трябва
+                            да имате
+                            навършени 18г.!!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <div class="" style="text-align: center;margin:5%">
+            <button class="icon-btn add-btn">
+                <div class="add-icon"></div>
+                <a class="btn-txt beggining" href="#beggining">Върни се в началото</a>
+            </button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerSection">
+            <div class="logoText">
+                <img src="./images/logo.png" title="logo" alt="logo">
+                <h1>ГК Спартак</h1>
+            </div>
+            <div class="footer-social-icons">
+                <h6 class="_14">Можете да ни последвате в социалните мрежи за актуални новини</h6>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/groups/367474546711176" class="social-icon"> <i
+                                class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=bg" class="social-icon"> <i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/GKSpartakPlovdiv/about/?ref=page_internal"
+                            class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footerSection">
+            <h2>Полезни линкове</h2>
+            <p class="underline"></p>
+            <ul class="usefullLinks">
+                <li>
+                    <a href="#"><i class="fas fa-check"></i>
+                        БСГ официален сайт
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><a href="#"><i class="fas fa-check"></i> Междунардна Асоциация </a>
+                </li>
+                <li>
+                    <a href="https://bit.ly/3bHUNJx"><i class="fas fa-check"></i>
+                        Международна федерация по гимнастика
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footerSection">
+            <h2>
+                Последни новини
+            </h2>
+            <p class="underline"></p>
+            <div class="newsFooter">
+                <img src="./images/covidFooter.jpg" alt="covid" title="covid">
+                <div>
+                    <a href="info.html">Подновяваме тренировки</a>
+                    <p>04-01-2021г.</p>
+                </div>
+            </div>
+            <div class="newsFooter">
+                <img src="./images/7hills.png" alt="sevenHills " title="sevenHills">
+                <div>
+                    <a href="info.html">Турнир седемте тепета</a>
+
+                    <p>21-11-2019г.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerSection">
+            <h2>За ГК Спартак</h2>
+            <p class="underline"></p>
+            <div class="forGkSpartak">
+                <p>Понеделник-Петък</p>
+                <p>07:00 - 19:30</p>
+            </div>
+            <div class="forGkSpartak">
+                <p>Събота</p>
+                <p>07:00 - 19:30</p>
+            </div>
+            <div class="forGkSpartak">
+                <p>Неделя</p>
+                <p>Почивка</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/splide-2.4.21/js/splide.min.js"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</body>
+
+</html>
